@@ -7,14 +7,14 @@
       <span> Hogar, dulce hogar </span>
     </mat-list-item>
 
-    <mat-list-item [routerLink]="'/crud'">
-      <a mat-stroked-button> /crud </a>
+    <mat-list-item >
+      <a mat-stroked-button [routerLink]="'/crud'"> /crud </a>
       <span> Crear, leer, actualizar o borrar datos </span>
     </mat-list-item>
 
     <mat-list-item>
-      <a mat-stroked-button href="https://bit.dev/primefaces/primeng/VHART"> /bit </a>
-      <span> Componente angular basado en Chart.js</span>
+      <a mat-stroked-button [routerLink]="'/bit'"> /bit </a>
+      <span> Componente angular basado en Chart.js. <a mat-tab-link href="https://bit.dev/primefaces/primeng/chart">[Fuente]</a></span>
     </mat-list-item>
 
     <mat-list-item [routerLink]="'/about'">
