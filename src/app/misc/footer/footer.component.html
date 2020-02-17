@@ -1,0 +1,17 @@
+<footer>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span> <b>Angular:</b> 8.2.14 </span>
+        <div class="cookies" *ngIf="cookieVisibility">
+          <span>
+            Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web.
+            Si continúa utilizando este sitio asumiremos que está de acuerdo.
+          </span>
+          <a mat-button (click)="setCookie()" class="mat-flat-button"> ACEPTAR </a>
+        </div>
+        <div class="github" *ngIf="!cookieVisibility">
+          <a mat-button class="mat-flat-button" href="https://github.com/CFP-PC20/2t_hito1"> GitHub </a>
+        </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</footer>
