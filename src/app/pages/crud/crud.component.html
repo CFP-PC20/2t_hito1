@@ -1,35 +1,35 @@
 
-<h1>Añadir Comentario</h1>
+<h1 role="heading">Añadir Comentario</h1>
 
-<mat-form-field>
+<mat-form-field role="form">
   <mat-label>Nombre</mat-label>
-  <input matInput [(ngModel)]="nombre" >
+  <input matInput [(ngModel)]="nombre" role="textbox">
 </mat-form-field>
 
 
-<button mat-fab color="primary" style="margin-left: 20px; font-size: 30px;" (click)="setResenya()">
-  <mat-icon *ngIf="isEdit">edit</mat-icon>
-  <mat-icon *ngIf="!isEdit">add</mat-icon>
+<button mat-fab color="primary" style="margin-left: 20px; font-size: 30px;" (click)="setResenya()" role="button">
+  <mat-icon *ngIf="isEdit" role="img">edit</mat-icon>
+  <mat-icon *ngIf="!isEdit" role="img">add</mat-icon>
 </button>
 
 
 <br>
 
-<mat-form-field>
+<mat-form-field role="form">
   <mat-label>Opinión</mat-label>
-  <textarea matInput [(ngModel)]="opinion"></textarea>
+  <textarea matInput [(ngModel)]="opinion" role="textbox"></textarea>
 </mat-form-field>
 
-<mat-list>
-  <mat-list-item *ngFor="let res of resenyas | keyvalue">
-    <a mat-stroked-button (click)="resenyas.delete( res.key )">
-      <mat-icon>delete</mat-icon>
+<mat-list role="list">
+  <mat-list-item *ngFor="let res of resenyas | keyvalue" role="listitem">
+    <a mat-stroked-button (click)="resenyas.delete( res.key )" role="button">
+      <mat-icon role="img">delete</mat-icon>
     </a>
 
     &nbsp;&nbsp;&nbsp;
 
-    <a mat-stroked-button (click)="edit( res.key , res.value.nombre , res.value.opinion )">
-      <mat-icon>edit</mat-icon>
+    <a mat-stroked-button (click)="edit( res.key , res.value.nombre , res.value.opinion )" role="button">
+      <mat-icon role="img">edit</mat-icon>
     </a>
 
     &nbsp;&nbsp;&nbsp;

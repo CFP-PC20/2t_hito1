@@ -1,16 +1,16 @@
 <footer>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <span class="angular"> <b>Angular:</b> 8.2.14 </span>
+        <span class="angular" role="contentinfo"> <b>Angular:</b> 8.2.14 </span>
         <div class="cookies" *ngIf="cookieVisibility">
-          <span>
+          <span role="dialog">
             Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web.
             Si continúa utilizando este sitio asumiremos que está de acuerdo.
           </span>
-          <a mat-button (click)="setCookie()" class="mat-flat-button"> ACEPTAR </a>
+          <a mat-button (click)="setCookie()" class="mat-flat-button" role="button"> ACEPTAR </a>
         </div>
         <div class="github" *ngIf="!cookieVisibility">
-          <a mat-button class="mat-flat-button" href="https://github.com/CFP-PC20/2t_hito1"> GitHub </a>
+          <a mat-button class="mat-flat-button" href="https://github.com/CFP-PC20/2t_hito1" role="button"> GitHub </a>
         </div>
     </mat-toolbar-row>
   </mat-toolbar>
