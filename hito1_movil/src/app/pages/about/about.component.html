@@ -1,0 +1,32 @@
+<h1> Sobre esta aplicación </h1>
+<p>
+  Hay varias rutas por visitar:
+  <mat-list>
+    <mat-list-item [routerLink]="'/home'">
+      <a mat-stroked-button> /home </a>
+      <span> Hogar, dulce hogar </span>
+    </mat-list-item>
+
+    <mat-list-item >
+      <a mat-stroked-button [routerLink]="'/crud'"> /crud </a>
+      <span> Crear, leer, actualizar o borrar datos </span>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a mat-stroked-button [routerLink]="'/bit'"> /bit </a>
+      <span> Componente angular basado en Chart.js. <a mat-tab-link href="https://bit.dev/primefaces/primeng/chart">[Fuente]</a></span>
+    </mat-list-item>
+
+    <mat-list-item [routerLink]="'/about'">
+      <a mat-stroked-button> /about </a>
+      <span> Página excepcionalmente informativa </span>
+    </mat-list-item>
+
+    <mat-list-item [routerLink]="'/error'">
+      <a mat-stroked-button> /* </a>
+      <span> Cualquier otra ruta lleva a la perdición </span>
+    </mat-list-item>
+
+
+  </mat-list>
+</p>

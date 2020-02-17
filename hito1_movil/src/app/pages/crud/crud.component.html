@@ -1,0 +1,40 @@
+
+<h1>Añadir Comentario</h1>
+
+<mat-form-field>
+  <mat-label>Nombre</mat-label>
+  <input matInput [(ngModel)]="nombre" >
+</mat-form-field>
+
+
+<button mat-fab color="primary" style="margin-left: 20px; font-size: 30px;" (click)="setResenya()">
+  <mat-icon *ngIf="isEdit">edit</mat-icon>
+  <mat-icon *ngIf="!isEdit">add</mat-icon>
+</button>
+
+
+<br>
+
+<mat-form-field>
+  <mat-label>Opinión</mat-label>
+  <textarea matInput [(ngModel)]="opinion"></textarea>
+</mat-form-field>
+
+<mat-list>
+  <mat-list-item *ngFor="let res of resenyas | keyvalue">
+    <a mat-stroked-button (click)="resenyas.delete( res.key )">
+      <mat-icon>delete</mat-icon>
+    </a>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <a mat-stroked-button (click)="edit( res.key , res.value.nombre , res.value.opinion )">
+      <mat-icon>edit</mat-icon>
+    </a>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <h3> {{ res.value.nombre }}&nbsp;:&nbsp;&nbsp; </h3>
+    <p> {{ res.value.opinion }} </p>
+  </mat-list-item>
+</mat-list>

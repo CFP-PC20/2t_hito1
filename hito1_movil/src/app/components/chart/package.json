@@ -1,0 +1,43 @@
+{
+  "name": "@bit/primefaces.primeng.chart",
+  "version": "8.0.2",
+  "homepage": "https://bit.dev/primefaces/primeng/chart",
+  "main": "dist/chart/bundles/bit-chart.umd.js",
+  "dependencies": {
+    "chart.js": "2.7.3"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "@angular/common": "~8.0.0",
+    "@angular/core": "~8.0.0",
+    "@angular/forms": "~8.0.0",
+    "@angular/router": "~8.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/angular@0.1.7"
+    },
+    "overrides": {
+      "dependencies": {
+        "@angular/common": "-",
+        "@angular/core": "-",
+        "@angular/forms": "-",
+        "@angular/router": "-"
+      },
+      "peerDependencies": {
+        "@angular/common": "~8.0.0",
+        "@angular/core": "~8.0.0",
+        "@angular/forms": "~8.0.0",
+        "@angular/router": "~8.0.0"
+      }
+    }
+  },
+  "es2015": "dist/chart/fesm2015/bit-chart.js",
+  "esm5": "dist/chart/esm5/bit-chart.js",
+  "esm2015": "dist/chart/esm2015/bit-chart.js",
+  "fesm5": "dist/chart/fesm5/bit-chart.js",
+  "fesm2015": "dist/chart/fesm2015/bit-chart.js",
+  "module": "dist/chart/fesm5/bit-chart.js",
+  "typings": "dist/chart/bit-chart.d.ts"
+}
