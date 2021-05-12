@@ -4,7 +4,7 @@
   "homepage": "https://bit.dev/primefaces/primeng/chart",
   "main": "dist/chart/bundles/bit-chart.umd.js",
   "dependencies": {
-    "chart.js": "2.7.3"
+    "chart.js": "2.9.4"
   },
   "devDependencies": {},
   "peerDependencies": {
